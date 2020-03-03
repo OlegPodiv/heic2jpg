@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="audiosampleentrybox.hpp" />
+    <ClInclude Include="auxiliarytypeinfobox.hpp" />
+    <ClInclude Include="auxiliarytypeproperty.hpp" />
+    <ClInclude Include="avccommondefs.hpp" />
+    <ClInclude Include="avcconfigurationbox.hpp" />
+    <ClInclude Include="avcdecoderconfigrecord.hpp" />
+    <ClInclude Include="avcparser.hpp" />
+    <ClInclude Include="avcsampleentry.hpp" />
+    <ClInclude Include="bbox.hpp" />
+    <ClInclude Include="bitstream.hpp" />
+    <ClInclude Include="channellayoutbox.hpp" />
+    <ClInclude Include="chunkoffsetbox.hpp" />
+    <ClInclude Include="cleanaperturebox.hpp" />
+    <ClInclude Include="codingconstraintsbox.hpp" />
+    <ClInclude Include="colourinformationbox.hpp" />
+    <ClInclude Include="compositionoffsetbox.hpp" />
+    <ClInclude Include="compositiontodecodebox.hpp" />
+    <ClInclude Include="customallocator.hpp" />
+    <ClInclude Include="datainformationbox.hpp" />
+    <ClInclude Include="datareferencebox.hpp" />
+    <ClInclude Include="decodepts.hpp" />
+    <ClInclude Include="decoderconfigrecord.hpp" />
+    <ClInclude Include="decoderconfigurationbox.hpp" />
+    <ClInclude Include="directreferencesampleslist.hpp" />
+    <ClInclude Include="editbox.hpp" />
+    <ClInclude Include="elementarystreamdescriptorbox.hpp" />
+    <ClInclude Include="entitytogroupbox.hpp" />
+    <ClInclude Include="filetypebox.hpp" />
+    <ClInclude Include="fourccint.hpp" />
+    <ClInclude Include="freespacebox.hpp" />
+    <ClInclude Include="fullbox.hpp" />
+    <ClInclude Include="groupslistbox.hpp" />
+    <ClInclude Include="handlerbox.hpp" />
+    <ClInclude Include="hevccommondefs.hpp" />
+    <ClInclude Include="hevcconfigurationbox.hpp" />
+    <ClInclude Include="hevcdecoderconfigrecord.hpp" />
+    <ClInclude Include="hevcsampleentry.hpp" />
+    <ClInclude Include="imagegrid.hpp" />
+    <ClInclude Include="imagemirror.hpp" />
+    <ClInclude Include="imageoverlay.hpp" />
+    <ClInclude Include="imagerelativelocationproperty.hpp" />
+    <ClInclude Include="imagerotation.hpp" />
+    <ClInclude Include="imagespatialextentsproperty.hpp" />
+    <ClInclude Include="itemdatabox.hpp" />
+    <ClInclude Include="iteminfobox.hpp" />
+    <ClInclude Include="itemlocationbox.hpp" />
+    <ClInclude Include="itempropertiesbox.hpp" />
+    <ClInclude Include="itempropertyassociation.hpp" />
+    <ClInclude Include="itempropertycontainer.hpp" />
+    <ClInclude Include="itemprotectionbox.hpp" />
+    <ClInclude Include="itemreferencebox.hpp" />
+    <ClInclude Include="jpegconfigurationbox.hpp" />
+    <ClInclude Include="jpegparser.hpp" />
+    <ClInclude Include="log.hpp" />
+    <ClInclude Include="mediabox.hpp" />
+    <ClInclude Include="mediadatabox.hpp" />
+    <ClInclude Include="mediaheaderbox.hpp" />
+    <ClInclude Include="mediainformationbox.hpp" />
+    <ClInclude Include="metabox.hpp" />
+    <ClInclude Include="moviebox.hpp" />
+    <ClInclude Include="moviefragmentsdatatypes.hpp" />
+    <ClInclude Include="movieheaderbox.hpp" />
+    <ClInclude Include="mp4audiodecoderconfigrecord.hpp" />
+    <ClInclude Include="mp4audiosampleentrybox.hpp" />
+    <ClInclude Include="nalutil.hpp" />
+    <ClInclude Include="nullmediaheaderbox.hpp" />
+    <ClInclude Include="pixelaspectratiobox.hpp" />
+    <ClInclude Include="pixelinformationproperty.hpp" />
+    <ClInclude Include="primaryitembox.hpp" />
+    <ClInclude Include="protectionschemeinfobox.hpp" />
+    <ClInclude Include="rawpropertybox.hpp" />
+    <ClInclude Include="sampledescriptionbox.hpp" />
+    <ClInclude Include="sampleentrybox.hpp" />
+    <ClInclude Include="samplegroupdescriptionbox.hpp" />
+    <ClInclude Include="samplegroupdescriptionentry.hpp" />
+    <ClInclude Include="samplesizebox.hpp" />
+    <ClInclude Include="sampletablebox.hpp" />
+    <ClInclude Include="sampletochunkbox.hpp" />
+    <ClInclude Include="sampletogroupbox.hpp" />
+    <ClInclude Include="sampletometadataitementry.hpp" />
+    <ClInclude Include="samplingratebox.hpp" />
+    <ClInclude Include="smallvector.hpp" />
+    <ClInclude Include="soundmediaheaderbox.hpp" />
+    <ClInclude Include="syncsamplebox.hpp" />
+    <ClInclude Include="timetosamplebox.hpp" />
+    <ClInclude Include="trackbox.hpp" />
+    <ClInclude Include="trackheaderbox.hpp" />
+    <ClInclude Include="trackreferencebox.hpp" />
+    <ClInclude Include="trackreferencetypebox.hpp" />
+    <ClInclude Include="trackrunbox.hpp" />
+    <ClInclude Include="videomediaheaderbox.hpp" />
+    <ClInclude Include="visualequivalenceentry.hpp" />
+    <ClInclude Include="visualsampleentrybox.hpp" />
+    <ClInclude Include="writeoncemap.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="audiosampleentrybox.cpp" />
+    <ClCompile Include="auxiliarytypeinfobox.cpp" />
+    <ClCompile Include="auxiliarytypeproperty.cpp" />
+    <ClCompile Include="avcconfigurationbox.cpp" />
+    <ClCompile Include="avcdecoderconfigrecord.cpp" />
+    <ClCompile Include="avcparser.cpp" />
+    <ClCompile Include="avcsampleentry.cpp" />
+    <ClCompile Include="bbox.cpp" />
+    <ClCompile Include="bitstream.cpp" />
+    <ClCompile Include="channellayoutbox.cpp" />
+    <ClCompile Include="chunkoffsetbox.cpp" />
+    <ClCompile Include="cleanaperturebox.cpp" />
+    <ClCompile Include="codingconstraintsbox.cpp" />
+    <ClCompile Include="colourinformationbox.cpp" />
+    <ClCompile Include="compositionoffsetbox.cpp" />
+    <ClCompile Include="compositiontodecodebox.cpp" />
+    <ClCompile Include="customallocator.cpp" />
+    <ClCompile Include="datainformationbox.cpp" />
+    <ClCompile Include="datareferencebox.cpp" />
+    <ClCompile Include="decodepts.cpp" />
+    <ClCompile Include="directreferencesampleslist.cpp" />
+    <ClCompile Include="editbox.cpp" />
+    <ClCompile Include="elementarystreamdescriptorbox.cpp" />
+    <ClCompile Include="entitytogroupbox.cpp" />
+    <ClCompile Include="filetypebox.cpp" />
+    <ClCompile Include="fourccint.cpp" />
+    <ClCompile Include="freespacebox.cpp" />
+    <ClCompile Include="fullbox.cpp" />
+    <ClCompile Include="groupslistbox.cpp" />
+    <ClCompile Include="handlerbox.cpp" />
+    <ClCompile Include="hevcconfigurationbox.cpp" />
+    <ClCompile Include="hevcdecoderconfigrecord.cpp" />
+    <ClCompile Include="hevcsampleentry.cpp" />
+    <ClCompile Include="imagegrid.cpp" />
+    <ClCompile Include="imagemirror.cpp" />
+    <ClCompile Include="imageoverlay.cpp" />
+    <ClCompile Include="imagerelativelocationproperty.cpp" />
+    <ClCompile Include="imagerotation.cpp" />
+    <ClCompile Include="imagespatialextentsproperty.cpp" />
+    <ClCompile Include="itemdatabox.cpp" />
+    <ClCompile Include="iteminfobox.cpp" />
+    <ClCompile Include="itemlocationbox.cpp" />
+    <ClCompile Include="itempropertiesbox.cpp" />
+    <ClCompile Include="itempropertyassociation.cpp" />
+    <ClCompile Include="itempropertycontainer.cpp" />
+    <ClCompile Include="itemprotectionbox.cpp" />
+    <ClCompile Include="itemreferencebox.cpp" />
+    <ClCompile Include="jpegconfigurationbox.cpp" />
+    <ClCompile Include="jpegparser.cpp" />
+    <ClCompile Include="log.cpp" />
+    <ClCompile Include="mediabox.cpp" />
+    <ClCompile Include="mediadatabox.cpp" />
+    <ClCompile Include="mediaheaderbox.cpp" />
+    <ClCompile Include="mediainformationbox.cpp" />
+    <ClCompile Include="metabox.cpp" />
+    <ClCompile Include="moviebox.cpp" />
+    <ClCompile Include="movieheaderbox.cpp" />
+    <ClCompile Include="mp4audiodecoderconfigrecord.cpp" />
+    <ClCompile Include="mp4audiosampleentrybox.cpp" />
+    <ClCompile Include="nalutil.cpp" />
+    <ClCompile Include="nullmediaheaderbox.cpp" />
+    <ClCompile Include="pixelaspectratiobox.cpp" />
+    <ClCompile Include="pixelinformationproperty.cpp" />
+    <ClCompile Include="primaryitembox.cpp" />
+    <ClCompile Include="protectionschemeinfobox.cpp" />
+    <ClCompile Include="rawpropertybox.cpp" />
+    <ClCompile Include="sampledescriptionbox.cpp" />
+    <ClCompile Include="sampleentrybox.cpp" />
+    <ClCompile Include="samplegroupdescriptionbox.cpp" />
+    <ClCompile Include="samplegroupdescriptionentry.cpp" />
+    <ClCompile Include="samplesizebox.cpp" />
+    <ClCompile Include="sampletablebox.cpp" />
+    <ClCompile Include="sampletochunkbox.cpp" />
+    <ClCompile Include="sampletogroupbox.cpp" />
+    <ClCompile Include="sampletometadataitementry.cpp" />
+    <ClCompile Include="samplingratebox.cpp" />
+    <ClCompile Include="soundmediaheaderbox.cpp" />
+    <ClCompile Include="syncsamplebox.cpp" />
+    <ClCompile Include="timetosamplebox.cpp" />
+    <ClCompile Include="trackbox.cpp" />
+    <ClCompile Include="trackheaderbox.cpp" />
+    <ClCompile Include="trackreferencebox.cpp" />
+    <ClCompile Include="trackreferencetypebox.cpp" />
+    <ClCompile Include="trackrunbox.cpp" />
+    <ClCompile Include="videomediaheaderbox.cpp" />
+    <ClCompile Include="visualequivalenceentry.cpp" />
+    <ClCompile Include="visualsampleentrybox.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{71C4EA09-F8B6-4830-A596-316BCBA99E82}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>common</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>../Mediate/$(Platform)/$(Configuration)/</IntDir>
+    <OutDir>../Output/$(Platform)/$(Configuration)/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../Output/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>../Mediate/$(Platform)/$(Configuration)/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>../Mediate/$(Platform)/$(Configuration)/</IntDir>
+    <OutDir>../Output/$(Platform)/$(Configuration)/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>../Mediate/$(Platform)/$(Configuration)/</IntDir>
+    <OutDir>../Output/$(Platform)/$(Configuration)/</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;HEIF_USE_STATIC_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;HEIF_USE_STATIC_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;HEIF_USE_STATIC_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;HEIF_USE_STATIC_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <CallingConvention>Cdecl</CallingConvention>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

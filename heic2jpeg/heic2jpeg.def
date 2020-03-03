@@ -1,0 +1,5 @@
+LIBRARY
+
+EXPORTS
+	EuHeic2jpeg @1
+	EuHeic2Thumbnail @2

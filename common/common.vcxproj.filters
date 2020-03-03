@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="audiosampleentrybox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="auxiliarytypeinfobox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="auxiliarytypeproperty.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="avccommondefs.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="avcconfigurationbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="avcdecoderconfigrecord.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="avcparser.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="avcsampleentry.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bitstream.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="channellayoutbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="chunkoffsetbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cleanaperturebox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="codingconstraintsbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="colourinformationbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="compositionoffsetbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="compositiontodecodebox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="customallocator.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="datainformationbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="datareferencebox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="decodepts.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="decoderconfigrecord.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="decoderconfigurationbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="directreferencesampleslist.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="editbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="elementarystreamdescriptorbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="entitytogroupbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="filetypebox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fourccint.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="freespacebox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fullbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="groupslistbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="handlerbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hevccommondefs.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hevcconfigurationbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hevcdecoderconfigrecord.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hevcsampleentry.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="imagegrid.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="imagemirror.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="imageoverlay.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="imagerelativelocationproperty.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="imagerotation.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="imagespatialextentsproperty.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="itemdatabox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="iteminfobox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="itemlocationbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="itempropertiesbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="itempropertyassociation.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="itempropertycontainer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="itemprotectionbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="itemreferencebox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="jpegconfigurationbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="jpegparser.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="log.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mediabox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mediadatabox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mediaheaderbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mediainformationbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="metabox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="moviebox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="moviefragmentsdatatypes.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="movieheaderbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4audiodecoderconfigrecord.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4audiosampleentrybox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nalutil.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nullmediaheaderbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pixelaspectratiobox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pixelinformationproperty.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="primaryitembox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="protectionschemeinfobox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rawpropertybox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sampledescriptionbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sampleentrybox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="samplegroupdescriptionbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="samplegroupdescriptionentry.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="samplesizebox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sampletablebox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sampletochunkbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sampletogroupbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sampletometadataitementry.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="samplingratebox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="smallvector.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="soundmediaheaderbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="syncsamplebox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="timetosamplebox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="trackbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="trackheaderbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="trackreferencebox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="trackreferencetypebox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="trackrunbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="videomediaheaderbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="visualequivalenceentry.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="visualsampleentrybox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="writeoncemap.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="audiosampleentrybox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="auxiliarytypeinfobox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="auxiliarytypeproperty.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="avcconfigurationbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="avcdecoderconfigrecord.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="avcparser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="avcsampleentry.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="bbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="bitstream.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="channellayoutbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="chunkoffsetbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cleanaperturebox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="codingconstraintsbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="colourinformationbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="compositionoffsetbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="compositiontodecodebox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="customallocator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="datainformationbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="datareferencebox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="decodepts.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="directreferencesampleslist.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="editbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="elementarystreamdescriptorbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="entitytogroupbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="filetypebox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fourccint.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="freespacebox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fullbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="groupslistbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="handlerbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hevcconfigurationbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hevcdecoderconfigrecord.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hevcsampleentry.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="imagegrid.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="imagemirror.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="imageoverlay.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="imagerelativelocationproperty.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="imagerotation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="imagespatialextentsproperty.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="itemdatabox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="iteminfobox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="itemlocationbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="itempropertiesbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="itempropertyassociation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="itempropertycontainer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="itemprotectionbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="itemreferencebox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jpegconfigurationbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jpegparser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="log.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mediabox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mediadatabox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mediaheaderbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mediainformationbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="metabox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moviebox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="movieheaderbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4audiodecoderconfigrecord.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4audiosampleentrybox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="nalutil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="nullmediaheaderbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pixelaspectratiobox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pixelinformationproperty.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="primaryitembox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="protectionschemeinfobox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="rawpropertybox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sampledescriptionbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sampleentrybox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="samplegroupdescriptionbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="samplegroupdescriptionentry.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="samplesizebox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sampletablebox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sampletochunkbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sampletogroupbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sampletometadataitementry.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="samplingratebox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="soundmediaheaderbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="syncsamplebox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="timetosamplebox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trackbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trackheaderbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trackreferencebox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trackreferencetypebox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trackrunbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="videomediaheaderbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="visualequivalenceentry.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="visualsampleentrybox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
