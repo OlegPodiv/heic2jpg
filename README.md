@@ -3,9 +3,7 @@
 Convert pictures in HEIC format to JPG format（HEIC格式的图片转换成JPG格式）
 
 （1）关于HEIC格式
-   在升级 iOS 11 之后，iPhone 7 及更新的设备内的照片存储将不再用 JPEG 了，而采用了一种新的图片格式 HEIF（发音同 heef），在 iOS 中对应的文件后缀
-   
- 为 .heic。
+   在升级 iOS 11 之后，iPhone 7 及更新的设备内的照片存储将不再用 JPEG 了，而采用了一种新的图片格式 HEIF（发音同 heef），在 iOS 中对应的文件后缀为 .heic。
 
  所以heic是HEIF的一种图片封装格式，HEIF格式的全名为 High Efficiency Image File Format（高效率图档格式）,其相关参考资料如下：
   
