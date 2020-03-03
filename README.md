@@ -8,6 +8,6 @@ Convert pictures in HEIC format to JPG format（HEIC格式的图片转换成JPG�
 
 首先介绍下本项目依赖相关工程：
 
-   下载HEIF/HEIC扩展库：
+   下载HEIF/HEIC扩展库：https://github.com/nokiatech/heif
    
    ffmpeg编解码库
